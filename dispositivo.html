@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+      content="width=device-width,
+      initial-scale=1.0">
+    <title>
+      Simulación de Dispositivo
+      IoT
+    </title>
+    <link href="css/estilos.css"
+      rel="stylesheet">
+    <script type="module"
+      src="cmp/mi-footer.js">
+      </script>
+  </head>
+  <body>
+    <div id="contenedor">
+      <div class="contenido">
+        <h2>
+          Simulación de Dispositivo
+          IoT
+        </h2>
+        <a href="index.html" ><p>Ver dispositivo móvil</p></a>
+        <a href="index.html"><img src="imagenes/dispositivo.jpg"  width="250"></a><br><br>
+        <h2>
+          Actividad
+        </h2>
+        <p>
+          <label>
+            Dispositivo<br><br>
+            <output
+              id="ctDispositivo">
+            </output>
+          </label>
+        </p>
+        <p>
+          <label>
+            Entrada<br><br>
+            <input id="ctEntrada"
+              type="range"
+              min="0" max="10">
+          </label>
+        </p>
+        <p>
+          <label>
+            <input id="ctSondea"
+              type="checkbox"
+              checked>
+            Sondea Salida
+          </label>
+        </p>
+        <p>
+          <label>
+            Salida<br><br>
+            <output id="ctSalida">
+            </output>
+          </label>
+        </p>
+        <p>
+          <output id="iotError">
+          </output>
+        </p>
+      </div>
+      <div class="footer">
+        <mi-footer></mi-footer>
+      </div>
+    </div>
+    <script type="module"
+      src="disp/CtrlDispositivo.js">
+      </script>
+  </body>
+</html>

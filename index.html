@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+      content="width=device-width,
+      initial-scale=1.0">
+    <title>Control IoT</title>
+    <script
+      src="https://www.gstatic.com/firebasejs/8.2.3/firebase-app.js"></script>
+    <script
+      src="https://www.gstatic.com/firebasejs/8.2.3/firebase-firestore.js"></script>
+    <script src="js/init.js">
+    </script>
+    <link href="css/estilos.css"
+      rel="stylesheet">
+    <script type="module"
+      src="cmp/mi-footer.js">
+      </script>
+  </head>
+  <body>
+    <div id="contenedor">
+      <header>     
+        <a href="index.html"><h1>Control IoT</h1></a>
+      </header> 
+      <div class="contenido">
+        <h2>Dispositivo Simulado</h2>
+        <a href="dispositivo.html" ><p>Ver dispositivo simulado</p></a>
+        <a href="dispositivo.html"><img src="imagenes/dispositivo.jpg"  width="250"></a><br><br>
+      </div>
+      <div class="contenido"> 
+        <h2>Historial</h2> 
+        <a href="historial.html" ><p>Ver historial</p></a>
+        <a href="historial.html"><img src="imagenes/historial.png"  width="250"></a><br><br>
+      </div>
+      <div class="contenido">
+        <h2>Actividad</h2>
+        <p>
+          <label>
+            Dispositivo<br><br>
+            <output
+              id="ctDispositivo">
+            </output>
+          </label>
+        </p>
+        <p>
+          <label>
+            Entrada<br><br>
+            <meter id="ctEntrada"
+              min="0" max="10">
+            </meter>
+          </label>
+        </p>
+        <p>
+          <label>
+            <input id=ctSalida
+              type="checkbox">
+            Salida
+          </label>
+        </p>
+
+      </div>
+      <div class="footer">
+        <mi-footer></mi-footer>
+      </div>
+    </div>
+    <script type="module"
+      src="js/CtrlMovil.js">
+    </script>
+  </body>
+</html>
